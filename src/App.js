@@ -44,7 +44,9 @@ function App() {
           <h2>
             Light theme
           </h2>
-          <i onClick={swtichTheme} class="fas fa-toggle-on"></i>
+          {
+            theme === 'light' ? <i onClick={swtichTheme} class="fas fa-toggle-off"></i> : <i onClick={swtichTheme} class="fas fa-toggle-on"></i>
+          }
         </div>
       </div>
     </div>
